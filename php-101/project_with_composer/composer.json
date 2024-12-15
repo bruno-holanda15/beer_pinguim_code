@@ -1,0 +1,28 @@
+{
+    "name": "bruno-holanda15/project-with-composer",
+    "description": "Review creation project with composer.",
+    "type": "project",
+    "config": {
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-4": {
+            "ProjectWithComposer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bruno Holanda",
+            "email": "br.holanda15@gmail.com"
+        }
+    ],
+    "require": {
+        "tongedev/rfb-document": "^1.1"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.65"
+    },
+    "scripts": {
+        "lint": "php-cs-fixer fix src -v"
+    }
+}
